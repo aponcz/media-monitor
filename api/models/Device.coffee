@@ -1,0 +1,21 @@
+###
+Device.coffee
+
+@description :: TODO: You might write a short summary of how this model works and what it represents here.
+@docs        :: http://sailsjs.org/#!documentation/models
+###
+
+module.exports =
+  adapter: 'sails-postgresql'
+
+  attributes:
+    name:
+      type: 'string'
+      required: true
+    uuid:
+      type: 'string'
+      minLength: 6
+      required: true
+    state:
+      type: 'string'
+      defaultsTo: 'on'
