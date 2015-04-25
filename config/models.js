@@ -20,7 +20,7 @@ module.exports.models = {
   // connection: 'localDiskDb',
 
 
-  connection: 'postgresqlServer'
+  connection: 'postgresqlServer',
   /***************************************************************************
   *                                                                          *
   * How and whether Sails will attempt to automatically rebuild the          *
@@ -29,6 +29,6 @@ module.exports.models = {
   * See http://sailsjs.org/#/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  // migrate: 'alter'
+   migrate: 'alter'
 
 };
